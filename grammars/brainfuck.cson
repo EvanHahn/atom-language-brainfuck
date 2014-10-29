@@ -9,10 +9,10 @@
   #   'match': '\\[|\\]'
   #   'name': 'meta.brace.square.brainfuck'
   # }
-  # {
-  #   'match': '<|>'
-  #   'name': 'keyword.other.brainfuck'
-  # }
+  {
+    'match': '<|>'
+    'name': 'keyword.other.brainfuck'
+  }
   {
     'match': '\\+|-'
     'name': 'keyword.operator.math.brainfuck'
