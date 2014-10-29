@@ -1,0 +1,12 @@
+{
+  "name": "language-brainfuck",
+  "version": "0.0.0",
+  "description": "Language support for Brainfuck",
+  "repository": "https://github.com/EvanHahn/atom-language-brainfuck",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

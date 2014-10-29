@@ -1,0 +1,28 @@
+'scopeName': 'source.brainfuck'
+'fileTypes': [
+  'bf'
+  'brainfuck'
+]
+'name': 'Brainfuck'
+'patterns': [
+  {
+    'match': '\\[|\\]'
+    'name': 'meta.brace.square.brainfuck'
+  }
+  {
+    'match': '<|>'
+    'name': 'keyword.other.brainfuck'
+  }
+  {
+    'match': '\\+|\\-'
+    'name': 'keyword.operator.brainfuck'
+  }
+  {
+    'match': '\\.|,'
+    'name': 'entity.brainfuck'
+  }
+  {
+    'match': '[^+\\-[\\].,]+'
+    'name': 'comment.brainfuck'
+  }
+]
