@@ -5,22 +5,26 @@
 ]
 'name': 'Brainfuck'
 'patterns': [
-  # {
-  #   'match': '\\[|\\]'
-  #   'name': 'meta.brace.square.brainfuck'
-  # }
+  {
+    'match': '\\[|\\]'
+    'name': 'keyword.brainfuck'
+  }
   {
     'match': '<|>'
-    'name': 'keyword.other.brainfuck'
+    'name': 'storage.brainfuck'
   }
   {
     'match': '\\+|-'
     'name': 'keyword.operator.math.brainfuck'
   }
-  # {
-  #   'match': '\\.|,'
-  #   'name': 'entity.brainfuck'
-  # }
+  {
+    'match': ','
+    'name': 'entity.brainfuck'
+  }
+  {
+    'match': '\\.'
+    'name': 'string.brainfuck'
+  }
   {
     'match': '[^+<>\\-\\[\\].,]+'
     'name': 'comment.brainfuck'
