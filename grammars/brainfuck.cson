@@ -2,6 +2,7 @@
 'fileTypes': [
   'bf'
   'brainfuck'
+  'b'
 ]
 'name': 'Brainfuck'
 'patterns': [
