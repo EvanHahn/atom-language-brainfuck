@@ -1,33 +1,51 @@
-'scopeName': 'source.brainfuck'
-'fileTypes': [
+name: 'Brainfuck'
+scopeName: 'source.brainfuck'
+fileTypes: [
+  'b'
   'bf'
   'brainfuck'
-  'b'
 ]
-'name': 'Brainfuck'
-'patterns': [
+foldingStartMarker: '\\['
+foldingStopMarker: '\\]'
+patterns: [
   {
-    'match': '\\[|\\]'
-    'name': 'keyword.brainfuck'
+    match: '\\<'
+    name: 'storage.pointer.left.brainfuck'
   }
   {
-    'match': '<|>'
-    'name': 'storage.brainfuck'
+    match: '\\>'
+    name: 'storage.pointer.right.brainfuck'
   }
   {
-    'match': '\\+|-'
-    'name': 'keyword.operator.math.brainfuck'
+    match: '\\+'
+    name: 'support.function.arithmetic.add.brainfuck'
   }
   {
-    'match': ','
-    'name': 'entity.brainfuck'
+    match: '\\-'
+    name: 'support.function.arithmetic.subtract.brainfuck'
   }
   {
-    'match': '\\.'
-    'name': 'string.brainfuck'
+    match: '\\['
+    name: 'keyword.control.repeat.start.brainfuck'
   }
   {
-    'match': '[^+<>\\-\\[\\].,]+'
-    'name': 'comment.brainfuck'
+    match: '\\]'
+    name: 'keyword.control.repeat.end.brainfuck'
+  }
+  {
+    match: '\\,'
+    name: 'string.input.brainfuck'
+  }
+  {
+    match: '\\.'
+    name: 'string.output.brainfuck'
+  }
+  {
+    match: '^[^<>+\\-\\[\\],.]*$'
+    name: 'comment.block.brainfuck'
+  }
+  {
+    match: '[^<>+\\-\\[\\],.]+'
+    name: 'comment.line.brainfuck'
   }
 ]

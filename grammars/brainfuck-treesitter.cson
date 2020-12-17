@@ -1,0 +1,40 @@
+name: 'Brainfuck'
+scopeName: 'source.brainfuck'
+type: 'tree-sitter'
+parser: 'tree-sitter-brainfuck'
+fileTypes: [
+  'b'
+  'bf'
+  'brainfuck'
+]
+
+folds: [
+  {
+    type: 'comment_loop'
+    start: {type: '"["'}
+    end: {type: '"]"'}
+  }
+  {
+    type: 'loop'
+    start: {type: '"["'}
+    end: {type: '"]"'}
+  }
+]
+
+scopes:
+  'module': 'source.brainfuck'
+
+  'comment_loop': 'comment.block.loop.brainfuck'
+  'comment': 'comment.block.brainfuck'
+
+  'loop > "["': 'keyword.control.repeat.start.brainfuck'
+  'loop > "]"': 'keyword.control.repeat.end.brainfuck'
+  'loop': 'meta.repeat.brainfuck'
+  'pointerleft': 'storage.pointer.left.brainfuck'
+  'pointerright': 'storage.pointer.right.brainfuck'
+  'memoryadd': 'support.function.arithmetic.add.brainfuck'
+  'memorysubtract': 'support.function.arithmetic.subtract.brainfuck'
+  'memoryinput': 'string.input.brainfuck'
+  'memoryoutput': 'string.output.brainfuck'
+
+  'ext_debugger': 'support.function.debugger.brainfuck'
