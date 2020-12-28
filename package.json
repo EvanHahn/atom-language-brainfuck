@@ -7,5 +7,10 @@
   "engines": {
     "atom": ">0.50.0"
   },
-  "dependencies": {}
+  "keywords": [
+    "tree-sitter"
+  ],
+  "dependencies": {
+    "tree-sitter-brainfuck": "^0.0.6"
+  }
 }
